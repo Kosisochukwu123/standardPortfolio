@@ -243,7 +243,7 @@ header .header-writeup {
   .header-writeup button {
     font-size: 14px;
     padding: 0.4rem 0.7rem;
-    height: 20vh;
+    height: 20vh !important;
   }
 
   
