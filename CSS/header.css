@@ -27,12 +27,12 @@ nav ul {
   font-family: var(--text-font);
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: white;
 }
 
-nav a:hover{
+nav a:hover {
   color: black;
   transform: scale(1.08);
   transition: color 0.2s, transform 0.2s;
@@ -143,8 +143,6 @@ header .header-writeup {
   transition: 0.3s transform linear, 0.3s height linear 0.5s;
 }
 
-
-
 /* ========== Laptops & Tablets Landscape (max-width: 1024px) ========== */
 @media (max-width: 1024px) {
   header {
@@ -220,7 +218,7 @@ header .header-writeup {
   }
 
   .nav-image {
-    display: none; 
+    display: none;
   }
 
   header .header-writeup {
@@ -244,9 +242,10 @@ header .header-writeup {
     font-size: 14px;
     padding: 0.4rem 0.7rem;
     height: 20vh !important;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
   }
-
-  
 
   .box {
     width: 100px;
@@ -256,8 +255,7 @@ header .header-writeup {
 }
 
 @media (max-width: 390px) {
-    header {
+  header {
     min-height: 100vh;
   }
 }
-

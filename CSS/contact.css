@@ -78,8 +78,6 @@
 @media (max-width: 480px) {
   .contact {
     padding: 2rem 1rem;
-    /* border: 2px solid; */
-    /* margin-top: 10rem !important; */
   }
 
   .contact-content h3 {
@@ -88,7 +86,7 @@
 
 
   .contact-content ul {
-    gap: 0.5rem;
+    gap: 2rem;
     font-size: 14px;
   }
 }
