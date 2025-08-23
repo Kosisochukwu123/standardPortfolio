@@ -1,0 +1,264 @@
+.projects {
+  background-color: orangered;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+.moving-text {
+  position: absolute;
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap; /* Keeps words on the same line */
+  font-size: 24px; /* Adjust font size as needed */
+  animation: slide 95s linear infinite; /* Controls speed and continuity */
+}
+
+.moving-text p {
+  font-size: 60px;
+  font-family: var(--header-font);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0vw); /* Starts from the right edge of the viewport */
+  }
+  100% {
+    transform: translateX(-100%); /* Moves to the left, out of view */
+  }
+}
+
+/* --------------------- THE ONE SECTION BELOW AT THE HTML --------------------------*/
+
+.project-works {
+  margin-top: 2rem;
+  padding: 0rem 3rem;
+}
+
+.project-works-first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-works-first img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.project-works-first h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-family: var(--header-font);
+  letter-spacing: 0.1em;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.project-works-first span {
+  margin-left: 2rem;
+  color: orangered;
+}
+
+.project-works-first .ok {
+  margin-left: 4rem;
+  color: black;
+}
+
+.project-works-first p {
+  letter-spacing: 0.1em;
+  width: 70%;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  font-family: var(--text-font);
+  font-size: 16px;
+}
+
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+  row-gap: 1.5rem;
+}
+
+figure div {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001f36dc;
+}
+
+figure img {
+  border: 10px solid gray;
+  width: 70%;
+  height: 40vh;
+  border-radius: 5px;
+}
+
+.aaaa img {
+  border: none;
+  width: 45%;
+}
+
+figcaption {
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  font-family: var(--text-font);
+  margin-top: 0.5rem;
+}
+
+/* ========== Laptops & Tablets Landscape (max-width: 1024px) ========== */
+@media (max-width: 1024px) {
+  .moving-text p {
+    font-size: 45px;
+  }
+
+  .project-works {
+    padding: 0rem 2rem;
+  }
+
+  .project-works-first {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-works-first img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .project-works-first h2 {
+    font-size: 48px;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .project-works-first p {
+    margin: 1.5rem auto;
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  figure div {
+    height: 45vh;
+  }
+
+  figure img {
+    width: 80%;
+    height: 30vh;
+  }
+}
+
+/* ========== Tablets Portrait (max-width: 768px) ========== */
+@media (max-width: 768px) {
+  .moving-text {
+    gap: 2rem;
+    font-size: 18px;
+  }
+
+  .moving-text p {
+    font-size: 32px;
+  }
+
+  .project-works-first h2 {
+    font-size: 36px;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr; /* stack projects vertically */
+  }
+
+  figure div {
+    height: 40vh;
+  }
+
+  figure img {
+    width: 90%;
+    height: 28vh;
+  }
+
+  figcaption {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+/* ========== Phones (max-width: 480px) ========== */
+@media (max-width: 480px) {
+  .projects {
+    height: 10vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .moving-text {
+    gap: 1rem;
+    font-size: 14px;
+    animation: slide 120s linear infinite; /* faster for mobile */
+  }
+
+  .moving-text p {
+    font-size: 22px;
+  }
+
+  .project-works {
+    padding: 0rem 1rem;
+  }
+
+  .project-works-first img {
+    width: 80%;
+  }
+
+  .project-works-first h2 {
+    font-size: 26px;
+    margin-top: 1.5rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .project-works-first span {
+    margin-left: 2rem;
+  }
+
+  .project-works-first .ok {
+    margin-left: 4rem;
+  }
+
+  .project-works-first p {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .project-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  figure div {
+    height: auto;
+    padding: 1rem;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border: 5px solid gray;
+  }
+
+  figcaption {
+    font-size: 13px;
+  }
+}

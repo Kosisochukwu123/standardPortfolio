@@ -1,0 +1,24 @@
+@import url(https://fonts.bunny.net/css?family=advent-pro:100);
+@import url(https://fonts.bunny.net/css?family=amiko:400);
+
+@import url(../CSS/header.css);
+@import url(../CSS/projects.css);
+@import url(../CSS/contact.css);
+@import url(../CSS/about.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: beige;
+}
+
+:root {
+  --header-font: "Advent Pro", sans-serif;
+  --text-font: "Amiko", sans-serif;
+}
