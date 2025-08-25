@@ -27,5 +27,41 @@ function initTooltips() {
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", function () {
   initTooltips();
-  setTimeout(() => initGauges(), 500);
+  setTimeout(() => initGauges(), 1500);
 });
+
+
+
+
+
+
+
+
+
+
+
+// let page = document
+// let home = document.getElementById("home")
+// let buttons = document.getElementById("buttons")
+
+
+
+// buttons.addEventListener("click", () => {
+// home.style.height = 0
+
+
+// })
+
+
+// function getToTop() {
+
+
+  
+// }
+
+
+// export {initGauges}
+// export default initGauges
+
+
+// import "as initGauges from" ./

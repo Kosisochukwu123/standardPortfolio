@@ -68,9 +68,6 @@ header .header-writeup {
   text-transform: uppercase;
 }
 
-.header-writeup .button {
-}
-
 .header-writeup .button button {
   padding: 0.4rem 2rem;
   text-transform: capitalize;

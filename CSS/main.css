@@ -15,10 +15,124 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  transition: background-color 0.5s ease-in-out !important;
   background-color: beige;
 }
+
+/* Dark screen mode */
+
+body.blackScreen {
+  background-color: rgb(0, 0, 0) !important;
+  color: white;
+}
+
+body.blackScreen .project-works {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 10%,
+    rgba(255, 68, 0, 0.603) 40%,
+    rgba(0, 0, 0, 0.8) 80%
+  );
+}
+
+body.blackScreen .contact {
+  background: url(../image/footer-bg-pic.png);
+  background-position: center;
+  background-size: cover;
+}
+
+body.blackScreen .ok{
+  color: white;
+}
+
+body.blackScreen .project-content a{
+  color: blue;
+}
+
+
+/* Dark screen mode codes stop here */
 
 :root {
   --header-font: "Advent Pro", sans-serif;
   --text-font: "Amiko", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    transform: translateX(-100%);
+    width: 100% !important;
+    height: 100vh !important;
+    background-color: orangered;
+    transition: transform 1.3s ease-in-out !important;
+  }
+
+  #navbar.show {
+    transform: translateX(0);
+  }
+
+  #close-sidebar-button {
+    margin-left: -10.5rem;
+    margin-top: -1.7rem;
+    border: none !important;
+    padding: 1em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px white;
+  }
+
+  #open-sidebar-button {
+    border: none;
+    z-index: 1000;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px white;
+    position: fixed;
+  }
+
+  #navbar ul {
+    background-color: orangered;
+  }
+
+  #navbar ul li {
+    margin-top: 2rem;
+  }
+
+  #navbar ul a {
+    color: black !important;
+    font-size: 17px !important;
+  }
+
+  .nav-buttons ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 12rem;
+    border: none;
+  }
+
+  #dark-mode {
+    position: fixed !important;
+    left: 20% !important;
+    margin-top: 1rem;
+    padding: 1rem;
+    z-index: 1000;
+    font-size: 24px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 1px 1px 5px white;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #close-sidebar-button {
+    display: none;
+  }
+
+  #open-sidebar-button {
+    display: none;
+  }
 }

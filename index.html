@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal porfolio</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -14,19 +15,45 @@
 <body>
 
 
+    <div class="nav-up">
+        <button id="open-sidebar-button" onclick="openSidebar()">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Open sidebar"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="5" width="28" height="3" rx="1.5" fill="#222" />
+                <rect y="12.5" width="28" height="3" rx="1.5" fill="#222" />
+                <rect y="20" width="28" height="3" rx="1.5" fill="#222" />
+            </svg>
+        </button>
+    </div>
+
+    <div>
+        <button id="dark-mode" ><i class="fa-regular fa-moon"></i></button>
+    </div>
+
+
     <header id="home">
 
-        <nav>
+        <nav id="navbar">
 
             <div class="nav-image">
                 <img src="image/face-photo.png" alt="">
             </div>
 
             <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li>
+                    <button id="close-sidebar-button" onclick="closeSidebar()">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="7.5" width="20" height="3" rx="1.5" transform="rotate(45 6 7.5)"
+                                fill="#222" />
+                            <rect x="7.5" y="22" width="20" height="3" rx="1.5" transform="rotate(-45 7.5 22)"
+                                fill="#222" />
+                        </svg>
+                    </button>
+                </li>
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
             </ul>
 
         </nav>
@@ -127,7 +154,8 @@
                 </div>
 
 
-                <figcaption>Decentralized Web3 Project <a href="https://kosisochukwu123.github.io/dapps/" target="_blank" >Visit website</a></figcaption>
+                <figcaption>Decentralized Web3 Project <a href="https://kosisochukwu123.github.io/dapps/"
+                        target="_blank">Visit website</a></figcaption>
 
             </figure>
 
@@ -163,7 +191,8 @@
         <div>
 
             <p>
-                I am a graduate with 2 years of experience in front-end development, passionate about building engaging
+                My name is Ogbunuko Kosisochukwu, I am a graduate with 2 years of experience in front-end development,
+                passionate about building engaging
                 and responsive web interfaces. I have strong communication and administrative skills, allowing me to
                 collaborate effectively with teams and manage projects efficiently.
             </p>
@@ -256,6 +285,12 @@
 
     </section>
 
+    <!-- <div id="get-to-top">
+
+        <button onclick="getToTop()" id="buttons">egt to top</button>
+
+    </div> -->
+
 
     <footer>
         <section class="contact" id="contact">
@@ -285,6 +320,8 @@
 
 
     <script src="JS/about.js"></script>
+    <script src="JS/HamburgarNav.js"></script>
+    <script src="JS/main.js"></script>
 
 
 

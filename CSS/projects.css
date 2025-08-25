@@ -36,7 +36,10 @@
 .project-works {
   margin-top: 2rem;
   padding: 0rem 3rem;
+  /* border: 2px solid red; */
+
 }
+
 
 .project-works-first {
   width: 100%;
