@@ -141,9 +141,14 @@ header .header-writeup {
 }
 
 /* ========== Laptops & Tablets Landscape (max-width: 1024px) ========== */
-@media (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
   header {
-    background-attachment: scroll; /* fixes choppy parallax on tablets */
+    background-attachment: fixed; 
+    /* border: 2px solid red; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
   }
 
   nav ul {
@@ -169,22 +174,53 @@ header .header-writeup {
 }
 
 /* ========== Tablets Portrait (max-width: 768px) ========== */
-@media (max-width: 768px) {
+@media (min-width:490px ) and (max-width: 768px) {
   nav ul {
     gap: 1rem;
     font-size: 15px;
     flex-wrap: wrap; /* prevents overflow */
   }
 
-  header .header-writeup {
-    margin-top: 10rem;
-    padding: 0 1.5rem;
+  header {
+    height: 90vh !important;
+    padding-top: 1rem;
+    background-position: center !important;
+    /* background-attachment: none; */
   }
 
-  .header-writeup .sentence {
-    font-size: 22px;
-    width: 100%;
+  header .header-writeup {
+  
+    padding: 0 1.5rem;
+    /* border: 2px solid red; */
+    /* width: 80%; */
+    /* padding: 1rem 2rem; */
+    /* margin: 0 auto; */
+      margin-top: 10rem;
+      margin-left: -10rem;
+      text-align: left;
+      /* background-color: rgba(0, 0, 0, 0.76); */
+      line-height: 1.5rem;
+      height: 10vh;
+      display: flex;
+      justify-content: start;
+      /* flex-direction: row; */
   }
+
+
+  .header-writeup .sentence{
+    width: 70% !important;
+     /* background-color: rgba(0, 0, 0, 0.76); */
+       padding: 1rem 2rem;
+       font-size: 30px !important;
+       line-height: 2.5rem;
+  }
+
+
+  header .button{
+    margin-top: 3rem;
+  }
+
+
 
   .box {
     width: 120px;

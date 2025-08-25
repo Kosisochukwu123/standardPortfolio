@@ -19,7 +19,7 @@ body {
   background-color: beige;
 }
 
-/* Dark screen mode */
+/* -------------Dark screen mode-------------- */
 
 body.blackScreen {
   background-color: rgb(0, 0, 0) !important;
@@ -41,20 +41,72 @@ body.blackScreen .contact {
   background-size: cover;
 }
 
-body.blackScreen .ok{
+body.blackScreen .ok {
   color: white;
 }
 
-body.blackScreen .project-content a{
+body.blackScreen .project-content a {
   color: blue;
 }
 
+body.blackScreen #dark-mode {
+  background-color: orangered;
+  box-shadow: 1px 1px 5px black;
+}
 
-/* Dark screen mode codes stop here */
+body.blackScreen #open-sidebar-button {
+  background-color: orangered;
+  box-shadow: 1px 1px 5px black;
+}
+
+body.blackScreen #back-to-top {
+  background-color: orangered;
+  box-shadow: 1px 1px 7px black;
+}
+
+/* -------Dark screen mode codes stop here -------*/
 
 :root {
   --header-font: "Advent Pro", sans-serif;
   --text-font: "Amiko", sans-serif;
+}
+
+#dark-mode {
+  position: fixed;
+  left: 4%;
+  top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50% !important;
+  border: none;
+  box-shadow: 1px 1px 5px white;
+  z-index: 1000;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+#dark-mode:hover {
+  cursor: grab;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: grab;
+  border: none;
+  padding: 0.6rem;
+  box-shadow: 1px 1px 7px black;
+  display: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  z-index: 1000;
+}
+
+#back-to-top.shows {
+  display: block;
 }
 
 @media screen and (max-width: 700px) {
@@ -85,7 +137,7 @@ body.blackScreen .project-content a{
   #open-sidebar-button {
     border: none;
     z-index: 1000;
-    margin-top: 1rem;
+    top: 2%;
     margin-left: 1rem;
     padding: 1em;
     border-radius: 50%;
@@ -117,7 +169,7 @@ body.blackScreen .project-content a{
   #dark-mode {
     position: fixed !important;
     left: 20% !important;
-    margin-top: 1rem;
+    top: 2%;
     padding: 1rem;
     z-index: 1000;
     font-size: 24px;
@@ -127,11 +179,6 @@ body.blackScreen .project-content a{
     display: flex;
     justify-content: center;
     align-items: center;
-  
-  }
-
-
-  #dark-mode button{
     -webkit-appearance: none !important;
     appearance: none !important;
   }

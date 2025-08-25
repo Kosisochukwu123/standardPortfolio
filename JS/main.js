@@ -13,9 +13,8 @@ const darkMode = document.getElementById("dark-mode");
 
 darkMode.addEventListener("click", () => {
   const isDarkMode = document.body.classList.toggle("blackScreen");
-//   setDarkMode(isDarkMode);
+  //   setDarkMode(isDarkMode);
 });
-
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     const darkMode = sessionStorageStorage.getitem('darkMode');
@@ -23,3 +22,19 @@ darkMode.addEventListener("click", () => {
 //         document.body.classList.add('blackScreen');
 //     }
 // })
+
+// BACK TO TOP FEATURE CODE
+
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.add("shows");
+  } else {
+    backToTop.classList.remove("shows");
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
