@@ -116,14 +116,17 @@ body.blackScreen .project-content a{
 
   #dark-mode {
     position: fixed !important;
-    left: 20% !important;
-    margin-top: 1.1rem;
-    padding: 0.9rem;
+    left: 23% !important;
+    margin-top: 1rem;
+    padding: 1rem;
     z-index: 1000;
     font-size: 24px;
     border-radius: 50%;
     border: none;
     box-shadow: 1px 1px 5px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
   }
 
