@@ -116,7 +116,7 @@ body.blackScreen .project-content a{
 
   #dark-mode {
     position: fixed !important;
-    left: 23% !important;
+    left: 20% !important;
     margin-top: 1rem;
     padding: 1rem;
     z-index: 1000;
