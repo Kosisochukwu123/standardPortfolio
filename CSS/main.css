@@ -124,7 +124,12 @@ body.blackScreen .project-content a{
     border-radius: 50%;
     border: none;
     box-shadow: 1px 1px 5px white;
-      -webkit-appearance: none;
+  
+  }
+
+
+  #dark-mode button{
+    -webkit-appearance: none;
     appearance: none;
   }
 }
