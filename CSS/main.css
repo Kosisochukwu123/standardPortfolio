@@ -5,6 +5,7 @@
 @import url(../CSS/projects.css);
 @import url(../CSS/contact.css);
 @import url(../CSS/about.css);
+@import url(../CSS/footer.css);
 
 * {
   margin: 0;
@@ -35,10 +36,15 @@ body.blackScreen .project-works {
   );
 }
 
-body.blackScreen .contact {
+body.blackScreen footer {
   background: url(../image/footer-bg-pic.png);
   background-position: center;
   background-size: cover;
+}
+
+body.blackScreen footer h3 {
+  -webkit-background-clip: text;
+  
 }
 
 body.blackScreen .ok {
@@ -181,6 +187,21 @@ body.blackScreen #back-to-top {
     align-items: center;
     -webkit-appearance: none !important;
     appearance: none !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #dark-mode {
+    left: 20% !important;
+    padding: 0.5em;
+  }
+
+  #open-sidebar-button {
+    padding: 0.7em !important;
+  }
+
+  #close-sidebar-button {
+    padding: 0.7em !important;
   }
 }
 

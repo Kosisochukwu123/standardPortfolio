@@ -141,91 +141,183 @@ header .header-writeup {
 }
 
 /* ========== Laptops & Tablets Landscape (max-width: 1024px) ========== */
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   header {
-    background-attachment: fixed; 
-    /* border: 2px solid red; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 90vh;
   }
 
-  nav ul {
-    gap: 1.2rem;
-    padding: 0.5rem 1rem;
-  }
-
   header .header-writeup {
-    flex-direction: column;
-    margin-top: 12rem;
-    text-align: center;
+    flex-direction: row;
+    margin-top: 10rem;
     gap: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.893);
+    padding: 2rem 2rem;
   }
 
   .header-writeup .sentence {
-    width: 80%;
-    font-size: 26px;
+    width: 65%;
+    font-size: 30px;
+    line-height: 3rem;
   }
 
-  .header-writeup .button {
+  .header-writeup button {
+    margin-left: -33rem !important;
+  }
+
+  nav ul {
+    gap: 3rem;
+    font-size: 15px;
+    flex-wrap: wrap; /* prevents overflow */
+    width: 50%;
+    height: 7vh !important;
+    margin-top: 1rem;
+  }
+
+  #dark-mode {
+    padding: 1rem !important;
+    top: 10% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+
+  header .header-writeup {
+    background-color: rgba(0, 0, 0, 0.861);
+    flex-direction: column;
+    padding: 2rem 2rem;
+    padding-bottom: 5rem;
+    height: fit-content;
+  }
+
+  .header-writeup .sentence {
+    width: 90%;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  header button {
+    margin-top: 3rem;
+    margin-left: 0rem !important;
+  }
+
+  #dark-mode {
+    padding: 1rem !important;
+    top: 10% !important;
+  }
+
+  nav ul {
+    gap: 3rem;
+    font-size: 15px;
+    flex-wrap: wrap; /* prevents overflow */
+    width: 60%;
+    height: 7vh !important;
     margin-top: 1rem;
   }
 }
 
 /* ========== Tablets Portrait (max-width: 768px) ========== */
-@media (min-width:490px ) and (max-width: 768px) {
+@media (min-width: 700px) and (max-width: 768px) {
+  #close-sidebar-button{
+    margin-left: -35rem !important;
+  }
+  
+  #dark-mode {
+    padding: 1em !important;
+    top: 10% !important;
+  }
   nav ul {
-    gap: 1rem;
+    gap: 2.5rem;
     font-size: 15px;
-    flex-wrap: wrap; /* prevents overflow */
+    width: 60%;
+    height: 7vh !important;
+    margin-top: 1rem;
   }
 
   header {
     height: 90vh !important;
     padding-top: 1rem;
     background-position: center !important;
-    /* background-attachment: none; */
+    background-attachment: local;
   }
 
   header .header-writeup {
-  
     padding: 0 1.5rem;
-    /* border: 2px solid red; */
-    /* width: 80%; */
-    /* padding: 1rem 2rem; */
-    /* margin: 0 auto; */
-      margin-top: 10rem;
-      margin-left: -10rem;
-      text-align: left;
-      /* background-color: rgba(0, 0, 0, 0.76); */
-      line-height: 1.5rem;
-      height: 10vh;
-      display: flex;
-      justify-content: start;
-      /* flex-direction: row; */
+    padding-bottom: 3rem;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.872);
+    flex-direction: column;
   }
 
-
-  .header-writeup .sentence{
-    width: 70% !important;
-     /* background-color: rgba(0, 0, 0, 0.76); */
-       padding: 1rem 2rem;
-       font-size: 30px !important;
-       line-height: 2.5rem;
+  .header-writeup .sentence {
+    width: 100% !important;
+    padding: 1rem 2rem;
+    font-size: 30px !important;
+    line-height: 2.5rem;
+    text-align: center;
   }
 
-
-  header .button{
-    margin-top: 3rem;
+  header button {
+    margin-top: 1rem;
   }
-
-
 
   .box {
     width: 120px;
     padding: 12px;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 700px) {
+  #dark-mode {
+    top: 2.3% !important;
+    margin-left: -2rem;
+  }
+
+    nav {
+    justify-content: center;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  header {
+    height: 90vh !important;
+    padding-top: 1rem;
+    background-position: center !important;
+    background-attachment: local;
+  }
+
+  header .header-writeup {
+    padding: 2rem 1.5rem;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.872);
+  }
+
+  .header-writeup .sentence {
+    width: 65%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 2.5rem;
   }
 }
 
@@ -259,6 +351,7 @@ header .header-writeup {
     flex-direction: column;
     padding: 0 1rem;
     gap: 1rem;
+    text-align: center;
   }
 
   .header-writeup .sentence {
@@ -290,5 +383,6 @@ header .header-writeup {
 @media (max-width: 390px) {
   header {
     min-height: 100vh;
+    background-attachment: local;
   }
 }
