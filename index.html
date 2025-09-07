@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal porfolio</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" />
 </head>
 
 
 
 
 <body>
-
 
     <div class="nav-up">
         <button id="open-sidebar-button" onclick="openSidebar()">
@@ -37,7 +36,6 @@
             </svg>
         </button>
     </div>
-
 
     <div>
         <button id="back-to-top">
@@ -126,7 +124,7 @@
 
         <div class="project-works-first">
 
-            <img src="image/3D Hair Design Website on Laptop.png" width="40%" alt="" srcset="">
+            <img data-aos="flip-left" src="image/3D Hair Design Website on Laptop.png" width="40%" alt="" srcset="">
 
             <div>
 
@@ -141,7 +139,7 @@
 
         <div class="project-content">
 
-            <figure>
+            <figure data-aos="fade-up">
 
                 <div>
 
@@ -155,7 +153,7 @@
             </figure>
 
 
-            <figure>
+            <figure data-aos="fade-up">
 
                 <div>
                     <img src="image/agency-website.png" alt="" srcset="">
@@ -166,7 +164,7 @@
             </figure>
 
 
-            <figure>
+            <figure data-aos="fade-up">
 
                 <div class="aaaa">
                     <img src="image/2025-08-21__44_-removebg-preview.png" alt="" srcset="">
@@ -179,7 +177,7 @@
             </figure>
 
 
-            <figure>
+            <figure data-aos="fade-up">
 
                 <div>
                     <img src="image/portfolio-website.png" width="20%" alt="" srcset="">
@@ -198,18 +196,17 @@
 
     <section class="about" id="about">
 
-        <div class="about-header">
+        <div class="about-header" data-aos="fade-right">
 
             <h3>about</h3>
 
-            <div class="animation">
-                <iframe src="https://lottie.host/embed/6d220615-3ce2-48df-9f42-6a9c37155363/B9YWMkAHA8.lottie"></iframe>
-
+            <div>
+                <img class="heartbeat" src="image/avataaars.png" height="90%" alt="" srcset="">
             </div>
 
         </div>
 
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left">
 
             <p>
                 My name is Ogbunuko Kosisochukwu, I am a graduate with 2 years of experience in front-end development,
@@ -329,12 +326,16 @@
             <h3>Socials</h3>
 
             <ul>
-                <li class="bounce-top"><a href="https://www.tiktok.com/@rep_ndi_igbo_?_t=ZS-8z6v67E16Od&_r=1" target="_blank"><img src="icons/tiktok-icons.png" alt="" srcset=""></a>
+                <li class="bounce-top"><a href="https://www.tiktok.com/@rep_ndi_igbo_?_t=ZS-8z6v67E16Od&_r=1"
+                        target="_blank"><img src="icons/tiktok-icons.png" alt="" srcset=""></a>
                 </li>
-                <li class="bounce-top"><a href="https://www.linkedin.com/in/kosisochukwu-johnbosco-7870ab380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                <li class="bounce-top"><a
+                        href="https://www.linkedin.com/in/kosisochukwu-johnbosco-7870ab380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                         target="_blank"><img src="icons/linkedin_icon.png" alt="" srcset=""></a></li>
-                <li class="bounce-top"><a href="https://x.com/rep_ndi_igbo?s=21" target="_blank"><img src="icons/x-icon.png" alt="" srcset=""></a></li>
-                <li class="bounce-top"><a href="https://wa.me/+2348143979523" target="_blank"><img src="icons/whatsapp_icon.png" alt="" srcset=""></a></li>
+                <li class="bounce-top"><a href="https://x.com/rep_ndi_igbo?s=21" target="_blank"><img
+                            src="icons/x-icon.png" alt="" srcset=""></a></li>
+                <li class="bounce-top"><a href="https://wa.me/+2348143979523" target="_blank"><img
+                            src="icons/whatsapp_icon.png" alt="" srcset=""></a></li>
 
             </ul>
 
@@ -342,6 +343,14 @@
 
     </footer>
 
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 
 

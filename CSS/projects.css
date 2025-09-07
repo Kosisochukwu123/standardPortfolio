@@ -95,6 +95,7 @@ figure div {
   justify-content: center;
   align-items: center;
   background-color: #001f36dc;
+  border-radius: 20px;
 }
 
 figure img {

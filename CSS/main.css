@@ -42,10 +42,6 @@ body.blackScreen footer {
   background-size: cover;
 }
 
-body.blackScreen footer h3 {
-  -webkit-background-clip: text;
-  
-}
 
 body.blackScreen .ok {
   color: white;
@@ -68,6 +64,22 @@ body.blackScreen #open-sidebar-button {
 body.blackScreen #back-to-top {
   background-color: orangered;
   box-shadow: 1px 1px 7px black;
+}
+
+body.blackScreen .about h5 {
+  color: bisque;
+}
+
+body.blackScreen .about-content p {
+  color: white;
+}
+
+body.blackScreen .about-content {
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.12);
+}
+
+body.blackScreen .skill-info {
+  color: white;
 }
 
 /* -------Dark screen mode codes stop here -------*/
@@ -100,7 +112,7 @@ body.blackScreen #back-to-top {
 #back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 5% !important;
   cursor: grab;
   border: none;
   padding: 0.6rem;
@@ -122,6 +134,7 @@ body.blackScreen #back-to-top {
     z-index: 1000 !important;
     transform: translateX(-100%);
     width: 100% !important;
+    
     height: 100vh !important;
     background-color: orangered;
     transition: transform 1.3s ease-in-out !important;
@@ -148,7 +161,7 @@ body.blackScreen #back-to-top {
     padding: 1em;
     border-radius: 50%;
     box-shadow: 1px 1px 5px white;
-    position: fixed;
+    position: fixed !important;
   }
 
   #navbar ul {
@@ -172,19 +185,17 @@ body.blackScreen #back-to-top {
     border: none;
   }
 
+
   #dark-mode {
     position: fixed !important;
     left: 20% !important;
     top: 2%;
-    padding: 1rem;
+    padding: 1.2em;
     z-index: 1000;
-    font-size: 24px;
     border-radius: 50%;
     border: none;
     box-shadow: 1px 1px 5px white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block !important;
     -webkit-appearance: none !important;
     appearance: none !important;
   }
