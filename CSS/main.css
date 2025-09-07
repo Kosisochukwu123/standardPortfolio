@@ -204,7 +204,7 @@ body.blackScreen .skill-info {
 @media screen and (max-width: 360px) {
   #dark-mode {
     left: 20% !important;
-    padding: 0.5em;
+    padding: 0.9em;
   }
 
   #open-sidebar-button {

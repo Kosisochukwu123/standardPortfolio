@@ -459,6 +459,11 @@ footer h3 {
   .contact-socials ul {
     margin-top: 0.3rem;
   }
+
+    .contact-socials img {
+  width: 50% !important;
+  margin-top: 1.5rem;
+}
 }
 
 /* High DPI/Retina displays */

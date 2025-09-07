@@ -227,10 +227,10 @@ header .header-writeup {
 
 /* ========== Tablets Portrait (max-width: 768px) ========== */
 @media (min-width: 700px) and (max-width: 768px) {
-  #close-sidebar-button{
+  #close-sidebar-button {
     margin-left: -35rem !important;
   }
-  
+
   #dark-mode {
     padding: 1em !important;
     top: 10% !important;
@@ -283,7 +283,7 @@ header .header-writeup {
     margin-left: -2rem;
   }
 
-    nav {
+  nav {
     justify-content: center;
     height: auto;
   }
@@ -378,6 +378,112 @@ header .header-writeup {
     width: 100px;
     padding: 10px;
     font-size: 13px;
+  }
+}
+
+/* Portrait mode for small screens */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  header {
+    height: 90vh;
+    background-position: top;
+    background-attachment: local;
+  }
+
+  nav {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  header .header-writeup {
+    margin-top: 6rem;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .header-writeup .sentence {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 3rem;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.763);
+    padding: 1rem;
+  }
+
+  .header-writeup button {
+    font-size: 14px;
+    padding: 0.4rem 0.7rem;
+    height: 20vh !important;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+
+  .box {
+    width: 100px;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+/* Landscape mode for small devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  header {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 1rem 0;
+  }
+
+  nav {
+    padding-top: 0.3rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: -0rem;
+    padding: 0.5em 0rem;
+    padding-right: 3rem;
+  }
+
+  nav ul li {
+    padding-right: 0.7em !important;
+  }
+
+  .header-writeup .sentence {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-top: -15rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.699);
+    line-height: 1.5em;
+  }
+
+  .header-writeup button {
+    font-size: 7px;
+    margin-bottom: 4rem;
+  }
+
+  .projects {
+    height: 20vh !important;
   }
 }
 
