@@ -324,9 +324,9 @@
   }
 
   .about h3 {
-    font-size: 24px;
-    left: 5%;
-    top: 15%;
+    font-size: 44px;
+    top: 20%;
+    left: 10%;
   }
 
   .about-header {
@@ -336,8 +336,9 @@
   }
 
   .about-header img {
-    left: 15%;
-    bottom: -5%;
+    left: 60%;
+    bottom: -8%;
+    height: 18vh;
   }
 
   .about-content {

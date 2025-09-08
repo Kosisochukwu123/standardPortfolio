@@ -20,6 +20,14 @@ body {
   background-color: beige;
 }
 
+.disabled-links {
+  pointer-events: none;
+  color: gray !important;
+  text-decoration: none;
+  cursor: default;
+  text-decoration: line-through;
+}
+
 /* -------------Dark screen mode-------------- */
 
 body.blackScreen {
@@ -41,7 +49,6 @@ body.blackScreen footer {
   background-position: center;
   background-size: cover;
 }
-
 
 body.blackScreen .ok {
   color: white;
@@ -134,7 +141,7 @@ body.blackScreen .skill-info {
     z-index: 1000 !important;
     transform: translateX(-100%);
     width: 100% !important;
-    
+
     height: 100vh !important;
     background-color: orangered;
     transition: transform 1.3s ease-in-out !important;
@@ -184,7 +191,6 @@ body.blackScreen .skill-info {
     margin-top: 12rem;
     border: none;
   }
-
 
   #dark-mode {
     position: fixed !important;

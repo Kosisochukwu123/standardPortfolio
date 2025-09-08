@@ -3,6 +3,8 @@
   height: 20vh;
   display: flex;
   align-items: center;
+   position: relative;
+    overflow: hidden;
 }
 
 .moving-text {
@@ -11,7 +13,7 @@
   gap: 4rem;
   white-space: nowrap; /* Keeps words on the same line */
   font-size: 24px; /* Adjust font size as needed */
-  animation: slide 95s linear infinite; /* Controls speed and continuity */
+  animation: slide 140s linear infinite; /* Controls speed and continuity */
 }
 
 .moving-text p {
@@ -25,7 +27,7 @@
 @keyframes slide {
   0% {
     transform: translateX(
-      50vw
+      -100vw
     ); /* Starts from the right edge of the viewport */
   }
   100% {
@@ -119,7 +121,9 @@ figcaption {
 }
 
 /* ========== Laptops & Tablets Landscape (max-width: 1024px) ========== */
-@media (min-width: 900px) and (max-width: 1200px) {
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
   .projects {
     height: 10vh;
     position: relative;
@@ -160,6 +164,7 @@ figcaption {
 
   .project-content {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
   }
 
   figure div {
@@ -174,6 +179,13 @@ figcaption {
   figcaption {
     font-size: 14px;
     text-align: center;
+  }
+}
+
+@media (min-width:900px) and (max-width: 1000) {
+   .project-content {
+    grid-template-columns: 1fr ;
+    padding-bottom: 2rem;
   }
 }
 
