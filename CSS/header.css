@@ -480,10 +480,15 @@ header .header-writeup {
   .header-writeup button {
     font-size: 7px;
     margin-bottom: 4rem;
+    -webkit-appearance: none;
+    appearance: none;
   }
 
   .projects {
     height: 20vh !important;
+  }
+  .nav-image {
+    display: none;
   }
 }
 
