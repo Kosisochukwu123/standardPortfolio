@@ -3,7 +3,7 @@
 
 @import url(../CSS/header.css);
 @import url(../CSS/projects.css);
-@import url(../CSS/contact.css);
+/* @import url(../CSS/contact.css); */
 @import url(../CSS/about.css);
 @import url(../CSS/footer.css);
 
@@ -140,8 +140,7 @@ body.blackScreen .skill-info {
     top: 0 !important;
     z-index: 1000 !important;
     transform: translateX(-100%);
-    width: 100% !important;
-
+    width: 60% !important;
     height: 100vh !important;
     background-color: orangered;
     transition: transform 1.3s ease-in-out !important;
@@ -152,7 +151,7 @@ body.blackScreen .skill-info {
   }
 
   #close-sidebar-button {
-    margin-left: -10.5rem;
+    margin-left: -5.5rem;
     margin-top: -1.7rem;
     border: none !important;
     padding: 1em;

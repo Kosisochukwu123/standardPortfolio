@@ -182,7 +182,7 @@ figcaption {
   }
 }
 
-@media (min-width:900px) and (max-width: 1000) {
+@media (min-width:900px) and (max-width: 1000px) {
    .project-content {
     grid-template-columns: 1fr ;
     padding-bottom: 2rem;
